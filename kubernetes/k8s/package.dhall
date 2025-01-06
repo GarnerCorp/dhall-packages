@@ -10,4 +10,10 @@
 , `1-17` =
       ./1.17.dhall sha256:532e110f424ea8a9f960a13b2ca54779ddcac5d5aa531f86d82f41f8f18d7ef1
     ? ./1.17.dhall
+, `1-26` =
+      ./1.26.dhall sha256:b70afb5cdab0005988ec92e53aad7f95f7eb1c6695e8cb7089aa11c906c7dec9
+    ? ./1.26.dhall
+, `1-31` =
+      ./1.31.dhall sha256:1a0d599eabb9dd154957edc59bb8766ea59b4a245ae45bdd55450654c12814b0
+    ? ./1.31.dhall
 }
