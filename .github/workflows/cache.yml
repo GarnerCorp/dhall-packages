@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: dhall-lang/setup-dhall@v4
       with:
-        version: '1.42.1'
+        version: '1.42.0'
     - name: cache
       run: |
         export XDG_CACHE_HOME=$PWD/cache
