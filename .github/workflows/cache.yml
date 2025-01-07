@@ -22,6 +22,7 @@ jobs:
         bin/dhall <<< ./package.dhall 1> /dev/null
     - uses: meeDamian/github-release@v1.0.0
       with:
+        allow_override: true
         token: ${{ secrets.GITHUB_TOKEN }}
         draft: true
         gzip: true
