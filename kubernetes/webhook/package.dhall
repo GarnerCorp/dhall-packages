@@ -1,4 +1,4 @@
-    (   ./schema.dhall sha256:668bf175901f6307293a86d6d43dbccb10ab74a7290547feea61be9417e6263f
+    (   ./schema.dhall sha256:519924ce613fbf8bd6602391d62f5368c7d95dee1d2119a4f4e2f5786893ba2f
       ? ./schema.dhall
     )
 /\  { renderMutatingWebhook =
