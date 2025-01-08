@@ -5,4 +5,4 @@ format:
 	scripts/format.sh
 
 diff:
-	dhall diff https://raw.githubusercontent.com/EarnestResearch/dhall-packages/master/package.dhall ./package.dhall
+	dhall diff https://raw.githubusercontent.com/GarnerCorp/dhall-packages/master/package.dhall ./package.dhall
