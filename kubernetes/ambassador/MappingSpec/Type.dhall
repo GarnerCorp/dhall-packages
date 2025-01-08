@@ -3,7 +3,8 @@
   https://www.getambassador.io/reference/mappings/
 -}
 let Map =
-        https://prelude.dhall-lang.org/v15.0.0/Map/Type sha256:210c7a9eba71efbb0f7a66b3dcf8b9d3976ffc2bc0e907aadfb6aa29c333e8ed
+        https://prelude.dhall-lang.org/v15.0.0/Map/Type
+          sha256:210c7a9eba71efbb0f7a66b3dcf8b9d3976ffc2bc0e907aadfb6aa29c333e8ed
       ? https://prelude.dhall-lang.org/v15.0.0/Map/Type
 
 in  { prefix : Text
@@ -13,7 +14,8 @@ in  { prefix : Text
         Optional
           ( Map
               Text
-              (   ../HeaderValue/Type.dhall sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
+              (   ../HeaderValue/Type.dhall
+                    sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
                 ? ../HeaderValue/Type.dhall
               )
           )
@@ -21,20 +23,23 @@ in  { prefix : Text
         Optional
           ( Map
               Text
-              (   ../HeaderValue/Type.dhall sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
+              (   ../HeaderValue/Type.dhall
+                    sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
                 ? ../HeaderValue/Type.dhall
               )
           )
     , cluster_idle_timeout_ms : Optional Natural
     , cors :
         Optional
-          (   ../Cors/Type.dhall sha256:0b86d5f694ee3a96e484ae446d6577d203c9db954ed14411ad136cc333ca48f0
+          (   ../Cors/Type.dhall
+                sha256:0b86d5f694ee3a96e484ae446d6577d203c9db954ed14411ad136cc333ca48f0
             ? ../Cors/Type.dhall
           )
     , circuit_breakers :
         Optional
           ( List
-              (   ../CircuitBreaker/Type.dhall sha256:5259c491f2a58dc6645dad41259456b1a5246f03eddbf5157d02cc712e714022
+              (   ../CircuitBreaker/Type.dhall
+                    sha256:5259c491f2a58dc6645dad41259456b1a5246f03eddbf5157d02cc712e714022
                 ? ../CircuitBreaker/Type.dhall
               )
           )
@@ -45,7 +50,8 @@ in  { prefix : Text
         Optional
           ( Map
               Text
-              (   ../HeaderValue/Type.dhall sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
+              (   ../HeaderValue/Type.dhall
+                    sha256:39b0867682d87243817188faa79e0eb9d5300cbacb7bcbdfcc7e6cb1c0e30565
                 ? ../HeaderValue/Type.dhall
               )
           )
@@ -54,7 +60,8 @@ in  { prefix : Text
     , host_rewrite : Optional Text
     , load_balancer :
         Optional
-          (   ../Loadbalancer/Type.dhall sha256:49728b27fe193b251a030abf3324b36cdcbf898eaf82454078956f73474812e5
+          (   ../Loadbalancer/Type.dhall
+                sha256:49728b27fe193b251a030abf3324b36cdcbf898eaf82454078956f73474812e5
             ? ../Loadbalancer/Type.dhall
           )
     , method : Optional Text
@@ -66,7 +73,8 @@ in  { prefix : Text
     , rewrite : Optional Text
     , retry_policy :
         Optional
-          (   ../RetryPolicy/Type.dhall sha256:72293302405d13f7c649c16c88d49cadbee8fd2101baf6853eef0fd437192acd
+          (   ../RetryPolicy/Type.dhall
+                sha256:72293302405d13f7c649c16c88d49cadbee8fd2101baf6853eef0fd437192acd
             ? ../RetryPolicy/Type.dhall
           )
     , timeout_ms : Optional Natural
